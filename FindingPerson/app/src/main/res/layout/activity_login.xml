@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!--android:background="@mipmap/login_background"-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jimro.findingperson.LoginActivity">
+
+    <include
+        android:id="@+id/title_login"
+        layout="@layout/title_layout" />
+    <!--图像-->
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/icon_width"
+        android:layout_height="@dimen/icon_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/icon_margintop_login"
+        android:src="@mipmap/jimro"
+        app:actualImageScaleType="centerCrop"
+        app:roundAsCircle="true"
+        app:roundingBorderColor="@color/icon_rounding_border_color"
+        app:roundingBorderWidth="@dimen/icon_rounding_border_width" />
+    <!--登录输入框-->
+    <include layout="@layout/login_input_text" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/input_margin"
+        android:background="@mipmap/login"
+        android:textSize="@dimen/title_text_size" />
+
+</LinearLayout>

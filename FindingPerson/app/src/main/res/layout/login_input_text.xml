@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/input_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/input_margin"
+        android:layout_marginRight="@dimen/input_margin"
+        android:layout_marginTop="@dimen/input_margin"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/input_margin"
+            android:layout_marginRight="@dimen/input_margin"
+            android:background="@null"
+            android:drawableLeft="@mipmap/user"
+            android:drawablePadding="@dimen/input_paddingleft"
+            android:hint="@string/input_name_hint"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/input_margin"
+            android:layout_marginRight="@dimen/input_margin"
+            android:layout_marginTop="@dimen/input_margin"
+            android:background="@null"
+            android:drawableLeft="@mipmap/password"
+            android:drawablePadding="@dimen/input_paddingleft"
+            android:hint="@string/input_password_hint"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/text_remind_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/remind_password_margin"
+            android:layout_marginTop="@dimen/remind_password_margin"
+            android:text="@string/remind_password_text"
+            android:textColor="@color/remind_password_color"
+            android:textSize="@dimen/remind_password_size" />
+    </LinearLayout>
+
+</merge>
